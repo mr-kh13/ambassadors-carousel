@@ -1,0 +1,15 @@
+@use "../../../styles/colors.scss";
+@use "../../../styles/typography.scss";
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 258px;
+  margin: auto;
+
+  .text {
+    @include typography.HeadingDesktopHeading3();
+    color: #fff;
+  }
+}

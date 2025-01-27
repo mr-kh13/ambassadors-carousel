@@ -1,0 +1,12 @@
+@use "../../../styles/colors.scss";
+
+.signature {
+  position: relative;
+  width: 199.91px;
+  height: 132px;
+  z-index: 2;
+
+  img {
+    object-fit: fill;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../../../styles/colors.scss";
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-blend-mode: color;
+    background: colors.$primary-red;
+    background: colors.$primary-red-lighten;
+  }
+}

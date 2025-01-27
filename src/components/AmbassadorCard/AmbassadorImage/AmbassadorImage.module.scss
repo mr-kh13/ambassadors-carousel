@@ -1,0 +1,12 @@
+@use "../../../styles/colors.scss";
+
+.image {
+  position: relative;
+  width: 318px;
+  height: 424.42px;
+  z-index: 2;
+
+  img {
+    object-fit: fill;
+  }
+}
