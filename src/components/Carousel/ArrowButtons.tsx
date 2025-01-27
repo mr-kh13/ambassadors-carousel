@@ -65,7 +65,7 @@ export function ArrowButtons({ classes, carouselApi, ...rest }: ArrowsProps) {
         onClick={scrollNext}
         {...rest}
       >
-        <Image src={chevronLeft} width={64} height={64} alt="chevron-left" />
+        <Image src={chevronLeft} width={48} height={48} alt="chevron-left" />
       </button>
       <button
         disabled={prevBtnDisabled}
@@ -73,7 +73,7 @@ export function ArrowButtons({ classes, carouselApi, ...rest }: ArrowsProps) {
         onClick={scrollPrev}
         {...rest}
       >
-        <Image src={chevronRight} width={64} height={64} alt="chevron-right" />
+        <Image src={chevronRight} width={48} height={48} alt="chevron-right" />
       </button>
     </>
   );

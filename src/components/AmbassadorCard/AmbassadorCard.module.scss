@@ -1,25 +1,6 @@
 @use "../../styles/colors.scss";
 @use "../../styles/typography.scss";
 
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-    position: absolute;
-    left: -999999px;
-    top: -999999px;
-    width: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    position: initial;
-    top: initial;
-    left: initial;
-    width: initial;
-    height: initial;
-  }
-}
-
 .ambassadorCard {
   position: relative;
   display: flex;
@@ -40,10 +21,12 @@
     flex-direction: column;
     flex-shrink: 0;
     border-radius: 0 0 8px 8px;
-    transition: all 1000ms ease;
-    transform: scale(0.85);
+    transition: all 500ms ease;
+    transform: scale(0.566);
 
     .imagesWrapper {
+      width: 376px;
+      height: 451px;
       position: relative;
       width: 100%;
       flex: 1 1 0;
@@ -52,6 +35,13 @@
       border-left: 4px solid colors.$secondary-yellow;
       border-right: 4px solid colors.$secondary-yellow;
       border-radius: 8px 8px 0 0;
+
+      .sportsIcon {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 2;
+      }
 
       .signatureWrapper {
         position: absolute;
@@ -79,7 +69,7 @@
       width: 100%;
       background: colors.$background-charcoal;
       border-radius: 0 0 8px 8px;
-      padding: 40px 24px;
+      padding: 24px 16px;
       @include typography.DesktopHeadingsH130Semibold();
       color: #fff;
       text-align: center;
@@ -100,12 +90,16 @@
     position: absolute;
     left: -999999px;
     top: -999999px;
-    transition: all 1000ms ease;
+    transition: all 800ms ease;
   }
 
   &.active {
     .ambassadorInfo {
       transform: scale(1);
+
+      .name {
+        padding: 40px 24px;
+      }
     }
 
     .quote {

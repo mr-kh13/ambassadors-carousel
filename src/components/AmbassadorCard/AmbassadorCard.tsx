@@ -4,6 +4,7 @@ import { AmbassadorSignature } from "./AmbassadorSignature";
 import { AmbassadorBackground } from "./AmbassadorBackground";
 import { AmbassadorQuote } from "./AmbassadorQuote";
 import clsx from "clsx";
+import Image from "next/image";
 
 interface Props {
   image: string;
@@ -32,6 +33,13 @@ export function AmbassadorCard({
     >
       <div className={styles.ambassadorInfo}>
         <div className={styles.imagesWrapper}>
+          <Image
+            src="/icons/sports.png"
+            width={56}
+            height={56}
+            alt="sports-icon"
+            className={styles.sportsIcon}
+          />
           <div className={styles.signatureWrapper}>
             <AmbassadorSignature src={signature} alt={name} />
           </div>
