@@ -1,0 +1,27 @@
+@mixin tagLarge {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+@mixin DesktopHeadingsH130Semibold {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin HeadingDesktopHeading3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
